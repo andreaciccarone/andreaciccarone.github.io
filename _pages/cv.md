@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-Download my [full CV here](https://andreaciccarone.github.io/files/CV_Ciccarone_2022.pdf)
+Download my [full CV here](https://andreaciccarone.github.io/MA-Math-Camp-2022)

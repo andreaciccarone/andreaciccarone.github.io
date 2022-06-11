@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Andrea Ciccarone"
 title_separator          : "-"
 name                     : &name "Andrea Ciccarone"
-description              : &description "personal description"
+description              : &description "PhD Student in Economics"
 url                      : https://andreaciccarone.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "andreaciccarone/andreaciccarone.github.io"
@@ -33,7 +33,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
+  branch                 : "master" # "master", "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
@@ -85,7 +85,7 @@ author:
   avatar           : "avatar.JPG"
   bio              : "PhD Student in Economics"
   location         : "New York City"
-  employer         :
+  employer         : "Columbia University"
   pubmed           : 
   googlescholar    : 
   email            : "ac4790@columbia.edu"
@@ -256,7 +256,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
