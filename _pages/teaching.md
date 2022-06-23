@@ -11,7 +11,7 @@ author_profile: true
 
 * **MA Math Camp** (*Summer 2022*)  
 [Economics MA, Columbia University](https://econ.columbia.edu/masters/)  
-Main Instructor ([Course Page](/Columbia-MA-Math-Camp-2022/))
+Main Instructor ([Course Page](/MA-Columbia-Math-Camp-2022/))
 
 
 ### Teaching Assistant
