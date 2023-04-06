@@ -17,7 +17,7 @@ Main Instructor ([Course Page](https://andreaciccarone.github.io/MA-Columbia-Mat
 ### Teaching Assistant
 
 * **UG Corporate Finance** (*Spring 2023*)  
-[UG, Columbia University](https://econ.columbia.edu/undergraduate/  
+[UG, Columbia University](https://econ.columbia.edu/undergraduate/)
 Teaching Assistant for Professor [Tri Vi Dang](http://www.columbia.edu/~td2332/)
 
 * **MBA Economics of Strategic Behavior** (*January Block Week 2023*)  
