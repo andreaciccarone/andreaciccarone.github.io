@@ -9,9 +9,13 @@ author_profile: true
 
 ### Instructor
 
+* **MA Math Camp** (*Summer 2023*)  
+[Economics MA, Columbia University](https://econ.columbia.edu/masters/)  
+Main Instructor ([Course Page](https://andreaciccarone.github.io/MA-Columbia-Math-Camp-2023/))
+
 * **MA Math Camp** (*Summer 2022*)  
 [Economics MA, Columbia University](https://econ.columbia.edu/masters/)  
-Main Instructor ([Course Page](https://andreaciccarone.github.io/MA-Columbia-Math-Camp-2022/))
+Main Instructor 
 
 
 ### Teaching Assistant

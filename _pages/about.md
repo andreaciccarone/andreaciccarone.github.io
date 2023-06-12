@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a third year PhD student in Business Economics at Columbia University, New York. I am mainly interested in political economy and organizational economics. 
+I am a third year PhD student in Business Economics at Columbia University, New York. I am mainly interested in political, media and organizational economics. 
 
 Prior to enrolling at Columbia, I graduated from Bocconi University in 2020 with a MS in Economics and Social Sciences.
 
