@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Andrea Ciccarone</title>
-  <meta name="description" content="Andrea Ciccarone — PhD Candidate in Economics. Research, publications, teaching, and CV." />
+  <meta name="description" content="Andrea Ciccarone — PhD Candidate in Economics. Research, resources, teaching, and CV." />
   <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
@@ -29,16 +29,25 @@
     }
     html { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
     body { margin: 0; background: var(--bg); color: var(--fg); line-height: 1.6; }
-    .container { max-width: 820px; margin: 0 auto; padding: 2.5rem 1.25rem; }
-    header { margin-bottom: 2.25rem; }
-    .top { display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; align-items: center; justify-content: space-between; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2.5rem 1.25rem; }
+
+    header { display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 2.25rem; }
+    .profile-rect {
+      max-width: 250px;
+      border-radius: 8px;
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--border);
+    }
+    .header-text { flex: 1; }
+
     h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); line-height: 1.1; margin: 0; letter-spacing: -0.01em; }
-    .tagline { color: var(--muted); margin: 0.25rem 0 0; font-size: 1.05rem; }
+    .tagline { color: var(--muted); margin: 0.25rem 0 1rem; font-size: 1.05rem; }
     nav { margin-top: 0.75rem; }
     nav a { color: var(--muted); text-decoration: none; margin-right: 0.9rem; }
     nav a:hover, nav a:focus { color: var(--fg); text-underline-offset: 3px; text-decoration: underline; }
 
-    .lead { font-size: 1.05rem; margin: 0.75rem 0 0; }
     .btn {
       display: inline-block; border: 1px solid var(--border); padding: 0.55rem 0.9rem;
       border-radius: 999px; text-decoration: none; color: var(--fg);
@@ -65,71 +74,119 @@
     .skip { position: absolute; left: -999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
     .skip:focus { position: static; width: auto; height: auto; padding: 0.5rem; background: var(--fg); color: var(--bg); border-radius: 0.5rem; }
 
-    .profile-pic {
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid var(--border);
+    .paper-info {
+      color: var(--muted);
+      font-size: 0.9rem;    /* slightly smaller than title */
+      font-weight: 300;     /* lighter tone */
+      margin-left: 0.4rem;
     }
-    .identity {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      flex-wrap: wrap;
+    .paper-info strong {
+      font-weight: 500;     /* moderate bold */
+      color: var(--muted);
     }
+    .paper-info a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .paper-info a:hover {
+      text-decoration: underline;
+    }
+
+    details p {
+      text-align: justify;
+    }
+
   </style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <div class="container">
     <header>
-      <div class="top">
-        <div class="identity">
-          <img src="me.jpg" alt="Portrait of Andrea Ciccarone" class="profile-pic" />
-          <div>
-            <h1>Andrea Ciccarone</h1>
-            <p class="tagline">PhD Candidate in Economics · Columbia University</p>
-          </div>
-        </div>
-        <div>
-          <a class="btn" href="CV.pdf" aria-label="Download CV as PDF">Download CV</a>
-        </div>
+      <img src="me.jpg" alt="Portrait of Andrea Ciccarone" class="profile-rect" />
+      <div class="header-text">
+        <h1>Andrea Ciccarone</h1>
+        <p class="tagline">PhD Candidate in Economics · Columbia University</p>
+        <a class="btn" href="CV.pdf" aria-label="Download CV as PDF">Download CV</a>
+        <nav aria-label="Primary">
+          <a href="#research">Research</a>
+          <a href="#resources">Resources</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-      <nav aria-label="Primary">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </header>
 
     <main id="main" tabindex="-1">
       <section id="about">
-        <h2>About</h2>
-        <p class="lead">I study political economy, media, and machine learning. My job market paper analyzes how visual and textual cues in television news convey partisan information.</p>
+        <p class="lead">
+          I am a sixth year PhD Candidate in Business Economics at Columbia University. 
+          I am mainly interested in political economy, media economics and organizational economics.
+        </p>
+
+        <p class="lead">
+            My research combines economics with machine learning to understand how information is produced, transmitted, and influences political and social outcomes.
+        </p>
+
+        <p class="lead">
+          Prior to enrolling at Columbia, I graduated from Bocconi University in 2020 
+          with a MS in Economics and Social Sciences.
+        </p>
       </section>
 
       <section id="research">
         <h2>Research</h2>
         <ul>
           <li>
-            <strong>An Image is Worth ~50 Words: Video Partisanship in Television News</strong>
-            <div class="meta">Job Market Paper · 2025 · <a href="#">paper</a> · <a href="#">slides</a></div>
+            <strong>An Image is Worth 48.13 Words: Video Partisanship in Television News</strong>
+            <span class="paper-info">
+              (<strong>Job Market Paper</strong>)
+            </span>
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                A large share of political news is now consumed through short, visually rich videos. Yet, most measures of media bias rely on textual content and ignore images. We develop a framework to quantify partisan signals from both textual and visual components of video political ads. Applied to immigration coverage in television news, omitting visuals understates the partisan gap between channels. Which modality conveys more partisanship depends on clip length: images dominate in short clips, text in long ones. Image-based predictions are also more sensitive to emotional content, while text reflects propositional content that requires longer exposure to accumulate. A survey experiment shows that these differences translate into relevant implications for political communication. Republican images immediately increase perceived Republican partisanship, raise negative emotions, and in short clips reduce pro-immigrant charity donations, especially among Republicans. Textual cues, by contrast, lose their partisan signal in short clips but, under longer exposures, shift immigration attitudes, with effects concentrated among Democratic viewers. The results reveal distinct comparative advantages of each modality: visuals act quickly through emotion and behavior, while text persuades more slowly through attitudes and beliefs.
+              </p>
+            </details>
           </li>
-          <li>
-            <strong>Fixed-Effects Topic Models for Organizational Text</strong>
-            <div class="meta">Working paper · with Amir & Dave · <a href="#">draft</a></div>
-          </li>
-        </ul>
-      </section>
 
-      <section id="publications">
-        <h2>Publications</h2>
-        <ul class="pubs">
           <li>
-            <strong>Title of Published Paper</strong>
-            <div class="meta">Journal · Year · <a href="#">doi</a></div>
+            <strong>Fixed Effects Topic Model</strong>
+            <span class="paper-info">
+              (with <a href="https://dan-biderman.netlify.app/">Dan Biderman</a>, <a href="https://www.cs.columbia.edu/~blei/">Davide Blei</a>, <a href="https://business.columbia.edu/faculty/people/wei-cai">Wei Cai</a>, <a href="https://www.amirfeder.com/">Amir Feder</a>  &amp; <a href="https://www.columbia.edu/~ap3116/">Andrea Prat</a>)
+            </span>
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                Social scientists wish to perform topic modeling on documents that are created by different authors in different contexts. However, the same broad topic may be expressed in different ways depending on the environment where the author operates. For example, one may wish to use employee reviews to identify broad corporate culture topics, but the language of reviews is influenced by industry-specific jargon. Existing methods attempt to control for these biases ex post, such as with traditional fixed effect regressions. But these methods cannot fully separate global themes from category-specific language within them. In this paper, we introduce the Fixed Effects Topic Model (FETM), a novel approach to disentangling broad
+                topics from contextual influences by incorporating
+                fixed effects directly into the generative process of language. We use
+                the FETM to identify themes in a large corpus of Glassdoor job reviews. We show
+                that it outperforms conventional topic models, both in
+                interpretability and predictive accuracy.
+              </p>
+            </details>
+          </li>
+
+          <li>
+            <strong>Today’s Bonus, Tomorrow’s Budget: Equity-Efficiency Tradeoff in Performance-Based Transfers</strong>
+            <span class="paper-info">
+              (with <a href="https://www.luigicaloi.com/">Luigi Caloi</a>)
+            </span>
+            <details>
+              <summary>Abstract</summary>
+              <p>
+                To improve service delivery, central governments often tie intergovernmental transfers to local policy
+                performance. While such performance-based transfers can raise efficiency by incentivizing municipalities, they may also
+                create equity losses by disproportionately rewarding high-capacity governments with larger transfers. We study this equity efficiency trade-off using transfers to Brazilian municipalities. When two states tied transfers to relative educational
+                performance, student test scores rose substantially: moving from the 25th to the 75th percentile of per capita conditional
+                transfers increased scores by 0.13 standard deviations. However, the reform also widened funding disparities, as
+                municipalities with higher pre-existing capacity received larger transfers. In contrast, contemporaneous reforms to passive
+                transfers had negligible effects on student outcomes. A simple model of optimal transfers interprets these findings,
+                suggesting that performance-based transfers deliver large efficiency gains, limited equity costs, and should constitute a
+                sizable share of the optimal transfer mix. We find minimal evidence of multitasking distortions or score manipulation.
+                Instead, we document increased education-related inputs and suggestive evidence of reduced corruption.
+              </p>
+            </details>
           </li>
         </ul>
       </section>
@@ -137,18 +194,53 @@
       <section id="teaching">
         <h2>Teaching</h2>
         <ul>
-          <li><strong>Course Name</strong> — TA, Fall 2024</li>
+          <li>
+            <strong>MA Math Camp</strong> — Main Instructor, 2022, 2023, 2024
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <strong>Math Methods for Economists (MA)</strong> — TA for Prof. Isaac Bjorke
+            <div class="meta">
+              <a href="Math_Evaluations.pdf">Evaluations</a> <a href="thank_a_prof.pdf">Thank-a-Prof</a>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <strong>Industrial Organization (MA)</strong> — TA for Prof. Ildiko Magyari
+            <div class="meta">
+              <a href="IO_Evaluations.pdf">Evaluations</a>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <strong>Corporate Finance (UG)</strong> — TA for Prof. Tri Vi Dang
+            <div class="meta">
+              <a href="CF_Evaluations.pdf">Evaluations</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="resources">
+        <h2>Resources</h2>
+        <ul>
+          <li>
+            <a href="Guest Lecture 2024 - Text and Image.pdf">
+              Image and Text Data for Social Science Research
+            </a>
+          </li>
         </ul>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:andrea@example.com">andrea@example.com</a></p>
+        <p>Email: <a href="mailto:ac4790@columbia.edu">ac4790@columbia.edu</a></p>
         <p class="social">
-          <a href="https://scholar.google.com/">Google Scholar</a>
           <a href="https://github.com/">GitHub</a>
           <a href="https://www.linkedin.com/">LinkedIn</a>
-          <a href="https://x.com/">Twitter</a>
         </p>
       </section>
     </main>
