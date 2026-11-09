@@ -168,11 +168,12 @@
             <a href="FETM_draft.pdf">The Mechanistic Fixed-Effects Topic Model: Recovering Corporate Culture from Employee Reviews</a>
             <span class="paper-info">
               (with <a href="https://dan-biderman.netlify.app/">Dan Biderman</a>, <a href="https://www.cs.columbia.edu/~blei/">David Blei</a>, <a href="https://business.columbia.edu/faculty/people/wei-cai">Wei Cai</a>, <a href="https://www.amirfeder.com/">Amir Feder</a>  &amp; <a href="https://www.columbia.edu/~ap3116/">Andrea Prat</a>)
+              &middot; <a href="FETM_supplement.pdf">Supplementary material</a>
             </span>
             <details>
               <summary>Abstract</summary>
               <p>
-                Probabilistic topic models are widely used to uncover latent themes in observational text, but comparisons across groups are vulnerable to environmental variation in language. When documents are generated in different contexts, such as across industries or sentiment polarities, standard topic models conflate contextual differences with topic content, while bag-of-words representations discard contextual nuance. We introduce the mechanistic Fixed-Effects Topic Model (mFETM), an unsupervised generative model that explicitly separates invariant topic content from environment-specific deviations. To retain context and tone while preserving interpretability, mFETM defines topics as distributions over interpretable semantic concepts extracted from a large language model using sparse autoencoders. Applied to over 900,000 pro and con documents from Glassdoor reviews of S&amp;P 1500 firms across 20 industries, mFETM improves held-out document perplexity while yielding topics that are substantially less confounded by review sentiment and industry vocabulary. In downstream firm-level analyses, mFETM recovers stable dimensions of corporate culture that reliably predict inclusion in Fortune’s 100 Best Companies to Work For. Finally, because the model operates in representation space, steering along estimated fixed-effect directions enables controlled counterfactual generation of workplace text across environments.
+                How can employee reviews reveal comparable dimensions of corporate culture when workers in different industries and review settings describe similar experiences differently? We study this problem using over 900,000 pro and con documents from Glassdoor reviews of S&amp;P 1500 firms across 20 industries. We introduce the mechanistic Fixed-Effects Topic Model (mFETM), which separates a shared topic component from environment-specific deviations. Topics are distributions over interpretable semantic features extracted from a language model using sparse autoencoders, retaining contextual information beyond word counts. Relative to a model without fixed effects, mFETM improves held-out document perplexity and reduces the association of estimated topic shares with review polarity and industry. Firm-level analyses relate these topics to inclusion in Fortune's 100 Best Companies to Work For and examine how the association changes when environment-associated topics are removed. Finally, we use the estimated fixed effects to steer language generation and assess the resulting changes in review polarity using illustrative generations and held-out likelihood exercises. These results support a framework for measuring shared workplace themes while accounting for systematic differences in how reviews express them.
               </p>
             </details>
           </li>
@@ -199,6 +200,12 @@
             Measuring Research Quality
             <span class="paper-info">
               (with <a href="https://elliottash.com">Elliott Ash</a>, Sergio Galletta &amp; David Zollikofer)
+            </span>
+          </li>
+          <li>
+            AI Visual Persuasion and Policy Accountability
+            <span class="paper-info">
+              (with Da Gong &amp; Mengmeng Wu)
             </span>
           </li>
         </ul>
